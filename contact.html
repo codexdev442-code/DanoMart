@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+  <div class="content">
+    <section class="contact">
+    <form action="" method="post">
+      <label for="Fullname">
+        <input type="text" name="message" placeholder="Entrer Your Full Name" required>
+      </label>
+      <label for="email">
+        <input type="email" name="message" placeholder="E-mail address" required>
+      </label>
+      <label for="phone-number">
+        <input type="number" name="message" placeholder="Phone number" required>
+      </label>
+      <br>
+      <textarea name="message" placeholder="Write your message" required></textarea>
+      <br>
+      <div>
+        <button type="submit">Send message</button>
+      </div>
+    </form>
+  </section>
+   <footer>
+      <div>
+        <h4>DanoMart</h4>
+        <p>Quality fashion & accessories you can trust.</p>
+      </div>
+       <ul id="links">
+          <li>
+             <a href="index.html">Home</a>
+          </li>
+          <li> 
+            <a href="shop.html">Shop</a>
+          </li>
+          <li>
+             <a href="cart.html"> Cart 
+              </a>
+          </li>
+          <li>
+             <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="contact_info">
+          <h4>Contact Info:</h4>
+          <p class="web-contact">support@danomart.com</p>
+          <p>+234 810 382 7278</p>
+        </div>
+        <div class="social-links">
+           <a href="https://instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+       </div>
+        <p>&copy;2026 DanoMart. All rights reserved.</p>
+   </footer>
+  </div>
+</body>
+ <script type="text/javascript" charset="utf-8">
+   
+  /* const param = new URLSearchParams(men_wears).toString();
+   window.location.href = `index.html?${param}`;
+   
+   const data = Object.fromEntries(new URLSearchParams(location.search));*/
+   
+   
+   const info = JSON.parse(localStorage.getItem("selectedItems"));
+   console.log(info)
+ </script>
+</html>
